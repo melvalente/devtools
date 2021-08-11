@@ -1,0 +1,47 @@
+.opções {
+    line-height: unset;
+    border-radius: 7px;
+    border: outset;
+    border-bottom: groove;
+    width: 316px;
+    margin-top: 19px;
+}
+
+.navbar {
+    box-shadow: 0 0 10px black;
+
+}
+
+.op {
+    margin-left: 4%;
+    padding: 2%;
+    margin-right: 3%;
+    border-right: ridge;
+}
+
+.sim {
+    margin-top: 2%;
+    margin-left: 6%;
+}
+
+.não {
+    margin-top: 2%;
+}
+
+.form {
+    width: 30%
+}
+
+.content {
+    display: flex;
+}
+
+.btgerar {
+    margin-top: 50px;
+}
+
+.gerar {
+    margin-top: 50px;
+    margin-left: 12px;
+}
+

@@ -103,3 +103,13 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a::before {
+   background: url(https://www.iconfinder.com/icons/7452460/software_development_dev_programming_code_icon);
+
+}

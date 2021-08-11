@@ -7,7 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="cpf.css">
     <link rel="icon" href="icon.png">
+    
 
     <title>DevTools</title>
 
@@ -57,62 +59,56 @@
         </div>
       </div>
     </nav>
-
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="cpf.html">Gerador de CPF</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Popular Tools</h1>
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Export</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                <li><a href="cpf.html">Gerador de CPF</a></li>
+                <li><a href="">Gerador de N°Cartão de Crédito</a></li>
+                <li><a href="">Gerador de Nomes</a></li>
+                <li><a href="">Gerador de RG</a></li>
+                <li><a href="">Gerador de CNPJ</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                <li><a href="">Nav item again</a></li>
+                <li><a href="">One more nav</a></li>
+                <li><a href="">Another nav item</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 style="margin-top: 10px; padding-bottom: 19px;" class="page-header">Gerador de CPF</h1>
+                
+                <h2 class="opções">Opções da ferramenta</h2>
+            
+                <section class="content">
+                    <div class="op">
+                    <h3>Gerar CPF com pontuação?</h3>
+                    <label class="sim radio-inline">
+                        <input type="radio" checked name="inlineRadioOptions" id="inlineRadio1" onclick="mascaraPont()" value="option1"> Sim
+                    </label>
+                    <label style="margin-top: 2%;" class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" onclick="mascaraPont()"  value="option2"> Não
+                    </label>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto btgerar">
+                        <button id="botaocpf" class="btn btn-primary" type="button" onclick="buttonGerarCPF()">Gerar CPF</button>
+                    </div>
+                    <div class="form-floating mb-3 gerar">
+                        <input type="text" class="form-control form" id="textocpf" placeholder="">
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto btgerar">
+                      <button id="botaocpf" class="btn" type="button" onclick="buttonLimpar()">Limpar</button>
+                    </div>
+                </section>
+    </div>      
 
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="cartão.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Gerador de N° de Cartão de Crédito</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder"> 
-              <a href="cpf.html">
-                <img src="cpf3.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-                <h4>Gerador de CPF</h4>
-                <span class="text-muted">Something else</span> 
-              </a>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="nome.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Gerador de Nomes</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="rg.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Gerador de RG</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript
+             <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
@@ -122,5 +118,6 @@
     <script src="assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+    <script src="js/cpf.js"></script>
+</body>
 </html>
